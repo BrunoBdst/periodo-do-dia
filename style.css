@@ -19,53 +19,75 @@ body {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+}
 
-  header {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
-    & .title {
-      font-family: var(---Font-roboto);
-      font-weight: 700;
-      font-size: 50px;
-    }
+.title {
+  font-family: var(---Font-roboto);
+  font-weight: 700;
+  font-size: 50px;
+}
 
-    & img {
-      width: 50px;
-    }
+.img-clock {
+  width: 50px;
+}
+
+main {
+  height: max-content;
+  width: max-content;
+  background-color: var(---Bg-content);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  border-radius: 15px;
+  padding: 40px 40px;
+}
+
+.img-hours {
+  width: 500px;
+  border-radius: 10px;
+}
+
+.message {
+  font-family: var("Roboto", sans-serif);
+  font-size: 30px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+p {
+  font-family: var(---Font-roboto);
+  font-size: 15px;
+}
+
+@media screen and (min-width: 344px) and (max-width: 450px) {
+  .title {
+    font-size: 35px;
   }
 
-  main {
-    height: max-content;
-    width: max-content;
-    background-color: var(---Bg-content);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px;
-    border-radius: 15px;
-    padding: 40px 40px;
-
-    & .img-hours {
-      width: 500px;
-      border-radius: 10px;
-    }
-
-    & .message {
-      font-family: var("Roboto", sans-serif);
-      font-size: 30px;
-    }
+  .img-clock {
+    width: 30px;
   }
 
-  & footer {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  .img-hours {
+    width: 230px;
+  }
 
-    p {
-      font-family: var(---Font-roboto);
-      font-size: 15px;
-    }
+  .message {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 11px;
   }
 }
